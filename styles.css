@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Calculator heading */
+h1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    color: white;
+}
+
+/* Main container */
+.container {
+    width: 30vw;
+    height: 60vh;
+    background-color: rgb(46, 46, 46);
+    margin: 100px auto;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.1);
+}
+
+/* Button grid */
+.btn {
+    margin-top: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding-left: 10px;
+}
+
+/* Buttons */
+.btn .button {
+    width: 80px;
+    height: 50px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    background: transparent;
+    border: 1px solid #555;
+    transition: 0.2s ease;
+}
+
+.btn .button:hover {
+    background: #ff6f91;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Input box */
+.inbox > input {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    text-align: end;
+    font-size: 25px;
+    padding-right: 10px;
+    border: none;
+    outline: none;
+    background: linear-gradient(-502deg, #252424, #454343, #303030);
+    color: white;
+}
+
+/* Background */
+body {
+   /* background: url('https://images.unsplash.com/photo-1603459780622-6fc089a3d3b7?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;*/
+    height: 100vh;
+}
+
+/* Responsive Design*/
+   
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .container {
+        width: 50vw;
+        height: 60vh;
+    }
+
+    .btn .button {
+        width: 70px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .inbox > input {
+        height: 90px;
+        font-size: 22px;
+    }
+}
+
+/* Mobile (Large) */
+@media (max-width: 768px) {
+    .container {
+        width: 80vw;
+        height: 60vh;
+        margin-top: 60px;
+    }
+
+    .btn {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 6px;
+        padding-left: 5px;
+    }
+
+    .btn .button {
+        width: 65px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .inbox > input {
+        height: 80px;
+        font-size: 20px;
+    }
+}
+
+/* Mobile (Small) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    .container {
+        width: 90vw;
+        height: 65vh;
+        margin-top: 40px;
+        padding: 12px;
+    }
+
+    .btn .button {
+        width: 60px;
+        height: 42px;
+        font-size: 15px;
+    }
+
+    .inbox > input {
+        height: 70px;
+        font-size: 18px;
+    }
+}
