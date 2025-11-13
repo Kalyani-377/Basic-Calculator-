@@ -6,7 +6,7 @@ It supports both **mouse clicks and keyboard input**, with smooth design and ani
 ---
 
 ## 🚀 Live Demo
-🔗 [Click here to view the live demo](https://yourusername.github.io/calculator/)  
+🔗 [Click here to view the live demo](https://kalyani-377.github.io/Basic-Calculator-/)  
 --- 
 ---
 
